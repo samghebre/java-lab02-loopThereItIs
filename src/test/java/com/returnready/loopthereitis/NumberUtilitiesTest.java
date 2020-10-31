@@ -3,6 +3,7 @@ package com.returnready.loopthereitis;
 import org.junit.Assert;
 import org.junit.Test;
 
+
 public class NumberUtilitiesTest {
     @Test
     public void testGetRange1A() {

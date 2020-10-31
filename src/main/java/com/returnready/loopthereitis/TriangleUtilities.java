@@ -3,44 +3,51 @@ package com.returnready.loopthereitis;
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
-        String starTriangle = "";
-        for (int i = 1; i < numberOfRows; i++) {
-            for (int j = 1; j <= i; j++) {
-                starTriangle += "*";
+        String anyTriangle = "";
+        int i; int j;
+        for (i = 1; i < numberOfRows; i++) {
+            for (j = 1; j <= i; j++) {
+                anyTriangle += "*";
             }
-            starTriangle += "\n";
+            anyTriangle += "\n";
         }
-        return starTriangle;
+
+        return anyTriangle;
     }
 
     public static String getRow(int numberOfStars) {
-        String starsLine = "";
-        for (int i = 1; i <= numberOfStars; i++) {
-            starsLine += "*";
+        String starRow = "";
+        for (int i = 0; i < numberOfStars; i++) {
+            starRow += "*";
         }
-        return starsLine;
+
+        return starRow;
     }
 
     public static String getSmallTriangle() {
-        String starTriangleSmall = "";
-        for (int i = 1; i <= 4; i++) {
-            for (int j = 1; j <= i; j++) {
-                starTriangleSmall += "*";
+        String smallTriangle = "";
+        int i; int j;
+        for (i = 1; i < 5; i++){
+            for (j = 1; j <= i; j++) {
+                smallTriangle += "*";
             }
-            starTriangleSmall += "\n";
+            smallTriangle += "\n";
         }
-        return starTriangleSmall;
+
+
+        return smallTriangle;
     }
 
     public static String getLargeTriangle() {
-        String starTriangleLarge = "";
-        for (int i = 1; i <= 9; i++) {
-            for (int j = 1; j <= i; j++) {
-                starTriangleLarge += "*";
+        String largeTriangle = "";
+        int i; int j;
+        for (i = 1; i < 10; i++) {
+            for (j = 1; j <= i; j++) {
+                largeTriangle += "*";
             }
-            starTriangleLarge += "\n";
+            largeTriangle += "\n";
         }
-        return starTriangleLarge;
+        return largeTriangle;
     }
 }
 

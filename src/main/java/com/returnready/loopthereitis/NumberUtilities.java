@@ -6,69 +6,70 @@ import java.util.ArrayList;
 
 public class NumberUtilities {
     public static String getEvenNumbers(int start, int stop) {
-        String string = "";
+        String evenResponse = "";
         for (int i = start; i < stop; i++) {
             if (i % 2 == 0) {
-                string += i + "";
+                evenResponse += i;
             }
         }
-        return string;
+        return evenResponse;
     }
 
 
     public static String getOddNumbers(int start, int stop) {
-        String string = "";
-        for (int i = start; i < stop; i++) {
+        String oddResponse = "";
+        for (int i = start; i < stop; i+=2) {
             if (i % 2 != 0) {
-                string += i + "";
+                oddResponse += i;
             }
         }
-        return string;
+        return oddResponse;
     }
 
 
     public static String getSquareNumbers(int start, int stop, int step) {
-        String string = "";
-        for (int i = start; i < stop; i+=step) {
-            string += i*i + "";
-
+        String squaredNum = "";
+        for (int i = start; i < stop; i += step) {
+            squaredNum += (i * i);
         }
-        return string;
+        return squaredNum;
     }
 
     public static String getRange(int stop){
-        String string = "";
+        String rangeAns = "";
         for (int i = 0; i < stop; i++) {
-            string += i + "";
+            rangeAns += i;
         }
-        return string;
+
+        return rangeAns;
     }
 
     public static String getRange(int start,int stop) {
-        String string = "";
+        String startStopRangeAns = "";
         for (int i = start; i < stop; i++) {
-            string += i + "";
-            System.out.println(string);
+            startStopRangeAns += i;
         }
-        return string;
+        return startStopRangeAns;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        String string = "";
-        for (int i = start; i < stop; i+=step) {
-            string += i + "";
+        String rangeWithStep = "";
+        for (int i = start; i < stop; i += step) {
+            rangeWithStep += i;
         }
-        return string;
+        return rangeWithStep;
     }
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        String string = "";
+        String expNum = "";
         for (int i = start; i < stop; i += step) {
-            string +=  (int) Math.pow(i, exponent) +"";
+            expNum += (int) Math.pow(i, exponent) + "";
         }
-        return string;
+
+
+        return expNum;
     }
 
     public static void main(String[] args) {

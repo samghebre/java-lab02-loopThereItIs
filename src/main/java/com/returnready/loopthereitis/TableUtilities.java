@@ -2,65 +2,63 @@ package com.returnready.loopthereitis;
 
 public class TableUtilities {
     public static String getSmallMultiplicationTable() {
-        int i, j;
-        String string = "";
-        for (i = 1; i <=5; i++) {
+        String smallMtable = "";
+        int i; int j;
+        for (i = 1; i <= 5; i++) {
             for (j = 1; j <= 5; j++) {
-                int product = i * j;
-                if (product <=  9) {
-                    string += "  " + product + " ";
-                }else {
-                    string += " " + product + " ";
-                }
-                string += "|";
+               int product = i * j;
+               if (product <= 9) {
+                   smallMtable += "  " + product + " ";
+               }else {
+                   smallMtable += " " + product + " ";
+               }
+               smallMtable += "|";
             }
-            string += "\n";
-
+            smallMtable += "\n";
         }
-        return string;
+        return smallMtable;
     }
 
 
 
     public static String getLargeMultiplicationTable() {
-        int i, j;
-        String string = "";
+        String largeMtable = "";
+        int i; int j;
         for (i = 1; i <=10; i++) {
             for (j = 1; j <= 10; j++) {
                 int product = i * j;
-                if (product <=  9) {
-                    string += "  " + product + " ";
+                if (product <= 9) {
+                    largeMtable += "  " + product + " ";
                 }else if (product > 9 && product < 100) {
-                    string += " " + product + " ";
+                    largeMtable += " " + product + " ";
                 }else {
-                    string += product + " ";
+                    largeMtable += "" + product + " ";
                 }
-                string += "|";
+                largeMtable += "|";
             }
-            string += "\n";
-
+            largeMtable += "\n";
         }
-        return string;
+
+        return largeMtable;
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        int i, j;
-        String string = "";
-        for (i = 1; i <=tableSize; i++) {
-            for (j = 1; j <= tableSize; j++) {
+        String mTable = "";
+        int i; int j;
+        for (i = 1; i <= 20; i++) {
+            for (j = 1; j <= 20; j++) {
                 int product = i * j;
-                if (product <=  9) {
-                    string += "  " + product + " ";
+                if (product <= 9) {
+                    mTable += "  " + product + " ";
                 }else if (product > 9 && product < 100) {
-                    string += " " + product + " ";
+                    mTable += " " + product + " ";
                 }else {
-                    string += product + " ";
+                    mTable += "" + product + " ";
                 }
-                string += "|";
+                mTable += "|";
             }
-            string += "\n";
-
+            mTable += "\n";
         }
-        return string;
+        return mTable;
     }
 }
